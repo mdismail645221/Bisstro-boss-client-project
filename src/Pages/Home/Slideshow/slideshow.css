@@ -1,0 +1,22 @@
+ul.thumbs.animated {
+    display: flex;
+    justify-content: center;
+}
+
+ 
+@media (min-width: 768px) and (max-width: 1400px) { 
+     .slider-wrapper.axis-horizontal img {
+        height: 600px;
+        object-fit: cover;
+    }    
+ }
+
+ @media (min-width: 1201px)  { 
+    .slider-wrapper.axis-horizontal img {
+       height: 700px;
+       object-fit: cover;
+   }    
+}
+       
+       
+ 

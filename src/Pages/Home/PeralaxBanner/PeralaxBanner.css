@@ -1,0 +1,25 @@
+.paralax-banner-col-12 {
+    position: absolute;
+    content: "";
+    background: rgb(255, 255, 255);
+    height: 300px;
+    width: 700px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.paralax-banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}

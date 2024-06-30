@@ -1,0 +1,8 @@
+.popular-single-image-block img {
+    border-radius: 0 50% 50% 50%; 
+    width: 100%;
+    max-width: 140px;
+    min-height: 120px;
+    height: 100%;
+
+}
