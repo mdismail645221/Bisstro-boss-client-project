@@ -16,7 +16,7 @@ const PopularMenu = () => {
   }, []);
 
   return (
-    <section className="popular-menu-section-wrrapper section-padding ">
+    <section className="popular-menu-section-wrrapper section-padding bg-[#f9f9f9]">
       <div className="container">
         <SectionTitle
           subHeading={"---Check it out---"}

@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
 import SectionTitle from "../../../Components/SectionTitle";
+// Slick slider style 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+import ReactStarsRating from 'react-awesome-stars-rating';
+import '../Testimonial/Testimonial.css'
 
 const NextArrow = (props) => {
   const { className, style, onClick } = props;
@@ -38,8 +42,8 @@ const Testimonial = () => {
   }, []);
 
   var settings = {
-    dots: true,
-    infinite: true,
+    // dots: true,
+    // infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -50,7 +54,7 @@ const Testimonial = () => {
   return (
     <section>
       <div className="testimonial-wrapper">
-        <div className="container">
+        <div className="half-width section-padding">
           <div className="testimonial-row">
             <div className="testimonial-top">
               <SectionTitle
@@ -60,12 +64,13 @@ const Testimonial = () => {
             </div>
             <div className="testimonial-bottom">
               <Slider {...settings}>
-                <div className="review-wrapper-box">
-                  <div className="review-start-block">
-                    <h3>*****</h3>
+                {review.map(items => (
+                  <div className="review-wrapper-box flex justify-center items-center text-center">
+                  <div className="review-start-block flex justify-center">
+                    <ReactStarsRating value={items.rating} />
                   </div>
                   {/* end review-start-block */}
-                  <div className="review-quote-block">
+                  <div className="review-quote-block flex justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="100"
@@ -84,7 +89,12 @@ const Testimonial = () => {
                     </svg>
                   </div>
                   {/* end review-quote-block */}
+                  <div className="review-details-block">
+                    <p>{items.details}</p>
+                    <h3>{items.name}</h3>
+                  </div>
                 </div>
+                ))}
               </Slider>
             </div>
           </div>

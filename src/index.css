@@ -16,7 +16,7 @@
     font-size: 2rem;
 }
 
-half-width {
+.half-width {
     max-width: 100%;
     width: 1200px;
     margin: auto;

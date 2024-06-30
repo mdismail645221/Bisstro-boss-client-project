@@ -5,6 +5,8 @@ import PopularMenu from '../PopularMenu/PopularMenu';
 import PeralaxBanner from '../PeralaxBanner/PeralaxBanner';
 import BannerFeature from '../BannerFeature/BannerFeature';
 import Testimonial from '../Testimonial/Testimonial';
+import CallUs from '../CallUs/CallUs';
+import ProductRec from '../ProductRec/ProductRec';
 
 const Home = () => {
     return (
@@ -13,6 +15,8 @@ const Home = () => {
             <Collection/>
             <PeralaxBanner/>
             <PopularMenu/>
+            <CallUs/>
+            <ProductRec/>
             <BannerFeature/>
             <Testimonial/>
         </div>
